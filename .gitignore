@@ -1,0 +1,7 @@
+# local editor/backup files
+*.bak
+*.orig
+*~
+
+# OS noise
+.DS_Store

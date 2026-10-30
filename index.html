@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TdKlijn Data — Freelance Data &amp; AI Consultancy</title>
+		<meta name="description" content="TdKlijn Data — freelance data & AI consultancy by Tim de Klijn. Data platforms, MLOps, generative AI and agents, built for production.">
+		<meta name="color-scheme" content="light dark">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--brand: #5BB09F;
+				--link: #3E8F7F;
+				--bg: #FFFFFF;
+				--text: #171A20;
+				--muted: #6B7280;
+				--line: rgba(23, 26, 32, .1);
+				--logo-text: #171A20;
+				--logo-filter: grayscale(1) opacity(.7);
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--link: #7CCBBB;
+					--bg: #111317;
+					--text: #EDEEF0;
+					--muted: #8B92A0;
+					--line: rgba(237, 238, 240, .1);
+					--logo-text: #EDEEF0;
+					--logo-filter: grayscale(1) invert(1) brightness(1.4) opacity(.7);
+				}
+			}
+			
+			*, *::before, *::after { box-sizing: border-box; }
+			body {
+				margin: 0;
+				font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+				font-size: 17px;
+				line-height: 1.7;
+				color: var(--text);
+				background: var(--bg);
+				-webkit-font-smoothing: antialiased;
+			}
+			a { color: var(--link); text-decoration: none; }
+			a:hover { text-decoration: underline; text-underline-offset: 3px; }
+			
+			.page { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+			@media (max-width: 600px) { .page { padding: 0 16px; } }
+			
+			header { display: flex; justify-content: space-between; align-items: center; padding: 40px 0; }
+			header svg { height: 22px; width: auto; display: block; }
+			header a.contact-link { font-size: 15px; color: var(--muted); }
+			header a.contact-link:hover { color: var(--text); }
+			
+			.intro { padding: 96px 0 112px; }
+			.intro h1 {
+				font-size: clamp(30px, 4.5vw, 42px); line-height: 1.2; letter-spacing: -0.02em;
+				font-weight: 500; margin: 0 0 24px;
+			}
+			.intro h1 em { font-style: normal; color: var(--brand); }
+			.intro p { color: var(--muted); margin: 0; max-width: 54ch; }
+			
+			section { padding: 56px 0; border-top: 1px solid var(--line); }
+			h2 {
+				font-size: 14px; font-weight: 500; color: var(--muted);
+				margin: 0 0 28px; letter-spacing: .01em;
+			}
+			p { margin: 0 0 18px; }
+			section p:last-child { margin-bottom: 0; }
+			
+			.rows { display: grid; gap: 28px; }
+			.row h3 { font-size: 17px; font-weight: 600; margin: 0 0 4px; }
+			.row p { color: var(--muted); margin: 0; }
+			
+			.skills { display: grid; grid-template-columns: 220px 1fr; gap: 14px 24px; margin: 0; }
+			.skills dt { font-weight: 500; }
+			.skills dd { margin: 0; color: var(--muted); }
+			@media (max-width: 600px) {
+				.skills { grid-template-columns: 1fr; gap: 2px; }
+				.skills dd { margin-bottom: 14px; }
+			}
+			
+			.logos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 40px 24px; align-items: center; justify-items: center; }
+			.logos img {
+				display: block; margin: 0 auto;
+				max-height: 32px; max-width: 100%; width: auto; height: auto; object-fit: contain;
+				filter: var(--logo-filter);
+			}
+			@media (max-width: 900px) { .logos { grid-template-columns: repeat(3, 1fr); } }
+			@media (max-width: 560px) { .logos { grid-template-columns: repeat(2, 1fr); } }
+			
+			footer {
+				border-top: 1px solid var(--line); padding: 32px 0 56px;
+				font-size: 14px; color: var(--muted);
+				display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px;
+			}
+			footer p { margin: 0; }
+			footer a { color: var(--muted); }
+			footer a:hover { color: var(--text); }
+			footer .links { display: flex; gap: 20px; }
+		</style>
+	</head>
+	<body>
+		<div class="page">
+
+			<header>
+				<!-- TdKlijn Data · woordmerk · IBM Plex Sans (SIL OFL) — letters ingebed als paden -->
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.4 146" role="img" aria-label="TdKlijn Data">
+					<g fill="var(--logo-text)">
+						<path transform="translate(0,110.5) scale(0.1,-0.1)" d="M555 581L356 581L356 0L224 0L224 581L26 581L26 698L555 698Z"/>
+						<path transform="translate(51.5,110.5) scale(0.1,-0.1)" d="M398 0L398 87L393 87Q379 42 340 15Q301 -12 249 -12Q184 -12 138.5 20Q93 52 69 113.5Q45 175 45 262Q45 349 69 409.5Q93 470 138.5 502Q184 534 249 534Q301 534 340.5 507.5Q380 481 393 436L398 436L398 740L526 740L526 0ZM290 94Q321 94 345.5 104Q370 114 384 133Q398 152 398 179L398 345Q398 370 384 389Q370 408 345.5 418.5Q321 429 290 429Q241 429 210 395.5Q179 362 179 306L179 216Q179 161 210 127.5Q241 94 290 94Z"/>
+						<path transform="translate(111.5,110.5) scale(0.1,-0.1)" d="M506 0L307 316L214 206L214 0L82 0L82 698L214 698L214 354L219 354L318 485L491 698L643 698L400 407L663 0Z"/>
+						<path transform="translate(178.6,110.5) scale(0.1,-0.1)" d="M271 0L202 0Q137 0 105.5 33Q74 66 74 126L74 740L202 740L202 102L271 102Z"/>
+						<path transform="translate(208,110.5) scale(0.1,-0.1)" d="M138 598Q99 598 81 616.5Q63 635 63 662L63 682Q63 710 81 728Q99 746 138 746Q177 746 195 728Q213 710 213 682L213 662Q213 635 195 616.5Q177 598 138 598ZM74 0L74 522L202 522L202 0Z"/>
+						<path transform="translate(235.5,110.5) scale(0.1,-0.1)" d="M74 -98L74 522L202 522L202 -63Q202 -128 169 -164Q136 -200 64 -200L-6 -200L-6 -98ZM138 598Q99 598 81 616.5Q63 635 63 662L63 682Q63 710 81 728Q99 746 138 746Q177 746 195 728Q213 710 213 682L213 662Q213 635 195 616.5Q177 598 138 598Z"/>
+						<path transform="translate(263,110.5) scale(0.1,-0.1)" d="M202 0L74 0L74 522L202 522L202 435L207 435Q223 477 257.5 505.5Q292 534 353 534Q433 534 476.5 480.5Q520 427 520 330L520 0L392 0L392 317Q392 372 372 400.5Q352 429 306 429Q280 429 256 419.5Q232 410 217 391.5Q202 373 202 345Z"/>
+					</g>
+					<g fill="#5BB09F">
+						<path transform="translate(351.4,110.5) scale(0.1,-0.1)" d="M93 0L93 698L327 698Q414 698 478.5 659.5Q543 621 578 543.5Q613 466 613 349Q613 232 578 154.5Q543 77 478.5 38.5Q414 0 327 0ZM177 74L327 74Q385 74 429 100Q473 126 498 174.5Q523 223 523 292L523 406Q523 475 498 524Q473 573 429 598.5Q385 624 327 624L177 624Z"/>
+						<path transform="translate(424.5,110.5) scale(0.1,-0.1)" d="M505 0L460 0Q428 0 408 13.5Q388 27 379 51Q373 66 371 84L366 84Q350 37 310.5 12.5Q271 -12 217 -12Q135 -12 89.5 30Q44 72 44 144Q44 193 68 226.5Q92 260 140.5 277.5Q189 295 264 295L366 295L366 346Q366 401 336 430Q306 459 244 459Q198 459 166 438Q134 417 113 382L65 427Q86 468 132 498Q178 528 248 528Q341 528 393.5 482Q446 436 446 354L446 70L505 70ZM366 235L260 235Q192 235 160 215Q128 195 128 157L128 136Q128 98 156 77Q184 56 230 56Q270 56 300.5 68.5Q331 81 348.5 102.5Q366 124 366 150Z"/>
+						<path transform="translate(483.9,110.5) scale(0.1,-0.1)" d="M299 0L199 0Q158 0 136 24Q114 48 114 85L114 446L29 446L29 516L77 516Q103 516 112.5 526.5Q122 537 122 563L122 659L194 659L194 516L307 516L307 446L194 446L194 70L299 70Z"/>
+						<path transform="translate(525,110.5) scale(0.1,-0.1)" d="M505 0L460 0Q428 0 408 13.5Q388 27 379 51Q373 66 371 84L366 84Q350 37 310.5 12.5Q271 -12 217 -12Q135 -12 89.5 30Q44 72 44 144Q44 193 68 226.5Q92 260 140.5 277.5Q189 295 264 295L366 295L366 346Q366 401 336 430Q306 459 244 459Q198 459 166 438Q134 417 113 382L65 427Q86 468 132 498Q178 528 248 528Q341 528 393.5 482Q446 436 446 354L446 70L505 70ZM366 235L260 235Q192 235 160 215Q128 195 128 157L128 136Q128 98 156 77Q184 56 230 56Q270 56 300.5 68.5Q331 81 348.5 102.5Q366 124 366 150Z"/>
+						<circle cx="592.9" cy="105" r="5.5"/>
+					</g>
+				</svg>
+				<a href="mailto:info@tdklijndata.nl" class="contact-link">info@tdklijndata.nl</a>
+			</header>
+
+			<main>
+				<div class="intro">
+					<h1>Tim de Klijn, PhD. Freelance data &amp; AI consultant, building for <em>production</em>.</h1>
+					<p>Data platforms, MLOps, generative AI and agents. Based in Utrecht, the Netherlands.</p>
+				</div>
+
+				<section>
+					<h2>About</h2>
+					<p>
+						Tim holds a PhD in Chemistry from Utrecht University and has spent 8+ years consulting
+						across the data spectrum: data science, ML engineering, data engineering and AI
+						engineering. Based in Utrecht, the Netherlands, he works with clients through his own
+						practice: TdKlijn Data.
+					</p>
+					<p>
+						His work spans the full stack: from data ingestion and pipelines to model serving,
+						monitoring and alerting using Python, Go, Kubernetes, Terraform/OpenTofu and CI/CD as
+						standard tooling. He builds developer platforms and user-facing products, always with
+						value delivery in mind. Clients include NS, the Port of Rotterdam Authority,
+						Rijkswaterstaat, Essent, in the financial, transport, energy and logistics sectors, both
+						public and state-owned.
+					</p>
+					<p>
+						In recent years the focus has shifted to generative AI, LLMs and agentic workflows. Tim
+						initiated a sovereign AI platform at Dataworkz: a Kubernetes platform at a European cloud
+						provider, fully defined in code, with an AI gateway, RAG, PII scanning, smart model
+						routing and per-user monitoring. He builds AI agents that automate processes and make
+						teams more productive and takes them all the way to production.
+					</p>
+					<p>
+						When not building data and AI products, Tim likes to go to rock/metal concerts and festivals
+						or read a good book.
+					</p>
+				</section>
+
+				<section>
+					<h2>What I do</h2>
+					<div class="rows">
+						<div class="row">
+							<h3>Data platforms &amp; pipelines</h3>
+							<p>Cloud data platforms, ingestion from dozens of sources, modelling and orchestration with
+								dbt, Snowflake, Databricks, Airflow and PySpark: built to scale and easy to operate.</p>
+						</div>
+						<div class="row">
+							<h3>MLOps &amp; machine learning platforms</h3>
+							<p>Production ML end to end: model serving, experiment tracking with MLflow, monitoring,
+								alerting and drift detection, with CI/CD as standard.</p>
+						</div>
+						<div class="row">
+							<h3>Generative AI &amp; agents</h3>
+							<p>LLM applications, RAG, agentic workflows and model hosting including AI gateways with
+								authentication, PII scanning, smart model routing and usage monitoring.</p>
+						</div>
+						<div class="row">
+							<h3>Cloud &amp; infrastructure</h3>
+							<p>Kubernetes platforms on Azure, AWS and European providers, fully managed as code with
+								Terraform/OpenTofu, ArgoCD and FluxCD.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Skills</h2>
+					<dl class="skills">
+						<dt>Data &amp; analytics</dt>
+						<dd>SQL, Airflow, Argo Workflows, Databricks, Snowflake, dbt, PySpark</dd>
+						<dt>Machine learning &amp; AI</dt>
+						<dd>MLOps, MLflow, Azure ML, Computer Vision, GenAI, Agentic Coding</dd>
+						<dt>Software development</dt>
+						<dd>Python, Go, Rust, Elixir</dd>
+						<dt>Cloud &amp; infrastructure</dt>
+						<dd>Docker, Kubernetes, KServe, Agent Router, ArgoCD, FluxCD, Azure, AWS, OpenTofu, CI/CD, Scaleway</dd>
+					</dl>
+				</section>
+
+				<section>
+					<h2>Companies I've worked for</h2>
+					<div class="logos">
+						<img src="images/logos/ns.svg" alt="NS (Nederlandse Spoorwegen)" title="NS · Data Engineer · 2023–2025" loading="lazy">
+						<img src="images/logos/port-of-rotterdam.svg" alt="Port of Rotterdam Authority" title="Port of Rotterdam Authority · Machine Learning Engineer · 2021–2023" loading="lazy">
+						<img src="images/logos/rijkswaterstaat.png" alt="Rijkswaterstaat" title="Rijkswaterstaat · Data Engineer, Data &amp; AI Lab · 2025–2026" loading="lazy">
+						<img src="images/logos/essent.svg" alt="Essent" title="Essent · Senior Data Engineer · 2026" loading="lazy">
+						<img src="images/logos/bng-bank.svg" alt="BNG Bank" title="BNG Bank · AI Expert / Lead Engineer · 2026" loading="lazy">
+						<img src="images/logos/royal-haskoningdhv.png" alt="Royal HaskoningDHV" title="Royal HaskoningDHV · Data Science Consultant · 2021" loading="lazy">
+						<img src="images/logos/sogeti.svg" alt="Sogeti" title="Sogeti · Senior / Lead Data Scientist · 2018–2021" loading="lazy">
+						<img src="images/logos/utrecht-university.svg" alt="Utrecht University" title="Utrecht University · PhD Chemistry · 2013–2018" loading="lazy">
+					</div>
+				</section>
+
+				<section>
+					<h2>Contact</h2>
+					<p>Working on something in data or AI? <a href="mailto:info@tdklijndata.nl">info@tdklijndata.nl</a></p>
+				</section>
+			</main>
+
+			<footer>
+				<p>&copy; <span id="year">2026</span>
+					TdKlijn Data B.V. · Reg. no. 00000000 · VAT NL000000000B01</p>
+				<div class="links">
+					<a href="https://www.linkedin.com/in/tim-de-klijn-5bb772133">LinkedIn</a>
+				</div>
+			</footer>
+		</div>
+		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	</body>
+</html>
