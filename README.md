@@ -19,10 +19,16 @@ python3 -m http.server 8000
 
 ## Before publishing
 
-Replace the placeholders in the footer of `index.html`:
+No placeholders left. The footer of `index.html` carries the registration number:
 
 ```html
-TdKlijn Data B.V. · Reg. no. 00000000 · VAT NL000000000B01
+TdKlijn Data B.V. · KvK 42209778
+```
+
+The VAT number was removed for now. If it should appear later, append it to the same line:
+
+```html
+TdKlijn Data B.V. · KvK 42209778 · VAT NL123456789B01
 ```
 
 Also worth a check: the contact address (`info@tdklijndata.nl`) and the LinkedIn URL.
