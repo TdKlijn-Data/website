@@ -6,13 +6,17 @@
 		<title>TdKlijn Data — Freelance Data &amp; AI Consultancy</title>
 		<meta name="description" content="TdKlijn Data — freelance data & AI consultancy by Tim de Klijn. Data platforms, MLOps, generative AI and agents, built for production.">
 		<meta name="color-scheme" content="light dark">
+		<link rel="icon" href="favicon.svg" type="image/svg+xml">
+		<link rel="icon" href="favicon.ico" sizes="any">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 		<style>
 			:root {
-				--brand: #5BB09F;
-				--link: #3E8F7F;
+				--brand: #5BB09F;      /* identity/accent, not for text on light */
+				--brand-text: #327A6C; /* AA-safe accent for text (5.08:1 on white) */
+				--link: #327A6C;       /* AA-safe link colour (5.08:1 on white) */
 				--bg: #FFFFFF;
 				--text: #171A20;
 				--muted: #6B7280;
@@ -22,6 +26,7 @@
 			}
 			@media (prefers-color-scheme: dark) {
 				:root {
+					--brand-text: #7CCBBB;
 					--link: #7CCBBB;
 					--bg: #111317;
 					--text: #EDEEF0;
@@ -58,7 +63,7 @@
 				font-size: clamp(30px, 4.5vw, 42px); line-height: 1.2; letter-spacing: -0.02em;
 				font-weight: 500; margin: 0 0 24px;
 			}
-			.intro h1 em { font-style: normal; color: var(--brand); }
+			.intro h1 em { font-style: normal; color: var(--brand-text); }
 			.intro p { color: var(--muted); margin: 0; max-width: 54ch; }
 			
 			section { padding: 56px 0; border-top: 1px solid var(--line); }
@@ -146,8 +151,8 @@
 						monitoring and alerting using Python, Go, Kubernetes, Terraform/OpenTofu and CI/CD as
 						standard tooling. He builds developer platforms and user-facing products, always with
 						value delivery in mind. Clients include NS, the Port of Rotterdam Authority,
-						Rijkswaterstaat, Essent, in the financial, transport, energy and logistics sectors, both
-						public and state-owned.
+						Rijkswaterstaat, Essent and BNG Bank — across transport, logistics, energy, financial and
+						public sectors.
 					</p>
 					<p>
 						In recent years the focus has shifted to generative AI, LLMs and agentic workflows. Tim
@@ -203,16 +208,16 @@
 				</section>
 
 				<section>
-					<h2>Companies I've worked for</h2>
+					<h2>Companies I’ve worked for</h2>
 					<div class="logos">
-						<img src="images/logos/ns.svg" alt="NS (Nederlandse Spoorwegen)" title="NS · Data Engineer · 2023–2025" loading="lazy">
-						<img src="images/logos/port-of-rotterdam.svg" alt="Port of Rotterdam Authority" title="Port of Rotterdam Authority · Machine Learning Engineer · 2021–2023" loading="lazy">
-						<img src="images/logos/rijkswaterstaat.png" alt="Rijkswaterstaat" title="Rijkswaterstaat · Data Engineer, Data &amp; AI Lab · 2025–2026" loading="lazy">
-						<img src="images/logos/essent.svg" alt="Essent" title="Essent · Senior Data Engineer · 2026" loading="lazy">
-						<img src="images/logos/bng-bank.svg" alt="BNG Bank" title="BNG Bank · AI Expert / Lead Engineer · 2026" loading="lazy">
-						<img src="images/logos/royal-haskoningdhv.png" alt="Royal HaskoningDHV" title="Royal HaskoningDHV · Data Science Consultant · 2021" loading="lazy">
-						<img src="images/logos/sogeti.svg" alt="Sogeti" title="Sogeti · Senior / Lead Data Scientist · 2018–2021" loading="lazy">
-						<img src="images/logos/utrecht-university.svg" alt="Utrecht University" title="Utrecht University · PhD Chemistry · 2013–2018" loading="lazy">
+						<img src="images/logos/ns.svg" alt="NS (Nederlandse Spoorwegen) — Data Engineer, 2023–2025" class="company-logo" loading="lazy">
+						<img src="images/logos/port-of-rotterdam.svg" alt="Port of Rotterdam Authority — Machine Learning Engineer, 2021–2023" class="company-logo" loading="lazy">
+						<img src="images/logos/rijkswaterstaat.png" alt="Rijkswaterstaat — Data Engineer, Data &amp; AI Lab, 2025–2026" class="company-logo" loading="lazy">
+						<img src="images/logos/essent.svg" alt="Essent — Senior Data Engineer, 2026" class="company-logo" loading="lazy">
+						<img src="images/logos/bng-bank.svg" alt="BNG Bank — AI Expert / Lead Engineer, 2026" class="company-logo" loading="lazy">
+						<img src="images/logos/royal-haskoningdhv.png" alt="Royal HaskoningDHV — Data Science Consultant, 2021" class="company-logo" loading="lazy">
+						<img src="images/logos/sogeti.svg" alt="Sogeti — Senior / Lead Data Scientist, 2018–2021" class="company-logo" loading="lazy">
+						<img src="images/logos/utrecht-university.svg" alt="Utrecht University — PhD Chemistry, 2013–2018" class="company-logo" loading="lazy">
 					</div>
 				</section>
 

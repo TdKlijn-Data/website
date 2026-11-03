@@ -5,9 +5,12 @@ Static one-pager for TdKlijn Data. No build step, no dependencies: `index.html` 
 root as well as from a repo subpath.
 
 ```
-index.html          the whole site (inline CSS, no framework)
-images/logos/       company logos used in the "Companies I've worked for" grid
-.nojekyll           tells GitHub Pages to serve files as-is (no Jekyll processing)
+index.html            the whole site (inline CSS, no framework)
+images/logos/         company logos used in the "Companies I've worked for" grid
+favicon.svg           icon, built from the wordmark glyphs (modern browsers)
+favicon.ico           16/32/48 raster fallback for older browsers
+apple-touch-icon.png  180px iOS home-screen icon
+.nojekyll             tells GitHub Pages to serve files as-is (no Jekyll processing)
 ```
 
 ## Local preview
