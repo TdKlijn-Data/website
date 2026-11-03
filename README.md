@@ -7,11 +7,32 @@ root as well as from a repo subpath.
 ```
 index.html            the whole site (inline CSS, no framework)
 images/logos/         company logos used in the "Companies I've worked for" grid
+fonts/                IBM Plex Sans (self-hosted variable woff2) + its OFL licence
 favicon.svg           icon, built from the wordmark glyphs (modern browsers)
 favicon.ico           16/32/48 raster fallback for older browsers
 apple-touch-icon.png  180px iOS home-screen icon
 .nojekyll             tells GitHub Pages to serve files as-is (no Jekyll processing)
 ```
+
+## Fonts
+
+IBM Plex Sans is self-hosted, so the page makes no third-party requests at all (relevant for
+GDPR, and no extra DNS/TLS handshakes on first paint).
+
+`fonts/ibm-plex-sans-latin.woff2` is the **latin subset variable font** (wght 100–700, 45 KB) —
+it covers all three weights the site uses (400/500/600) in one file. The `@font-face` rule
+lives in the inline `<style>` and declares a `unicode-range`, so scripts outside Latin fall
+back to the system font instead of downloading glyphs they cannot use.
+
+To update it, pull `src: url(...)` for the `latin` subset from the Google Fonts CSS API:
+
+```sh
+curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36" \
+  "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+```
+
+The last `woff2` of each weight block is the latin subset — they are all the same file.
+Licence: SIL Open Font License 1.1, see `fonts/OFL.txt` (must stay with the font).
 
 ## Local preview
 
