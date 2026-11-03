@@ -11,8 +11,24 @@ fonts/                IBM Plex Sans (self-hosted variable woff2) + its OFL licen
 favicon.svg           icon, built from the wordmark glyphs (modern browsers)
 favicon.ico           16/32/48 raster fallback for older browsers
 apple-touch-icon.png  180px iOS home-screen icon
+og-image.png          1200x630 social preview card (Open Graph)
+og-source.html        generator for og-image.png; not part of the site (noindex)
 .nojekyll             tells GitHub Pages to serve files as-is (no Jekyll processing)
 ```
+
+## Social preview (Open Graph)
+
+`index.html` declares Open Graph + Twitter card metadata, so a shared link renders as a card
+with the wordmark instead of a bare URL. The image is `og-image.png` (1200x630).
+
+**Absolute URLs, and the one thing to change:** `og:url`, `og:image`, `twitter:image` and
+`link rel=canonical` point at `https://tdklijndata.nl/`. Scrapers require absolute URLs, so if
+the site is published to `https://tdklijn-data.github.io/website/` first, edit those four
+values in the `<head>` to match — otherwise the preview card points at a domain that does not
+resolve yet.
+
+To regenerate the image after a copy change, open `og-source.html` in a 1200x630 viewport and
+screenshot it (it uses the same self-hosted font and the wordmark from `index.html`).
 
 ## Fonts
 
